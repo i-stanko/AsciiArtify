@@ -12,6 +12,13 @@ The purpose of this document is to compare three tools for deploying local Kuber
     - Architecture: Runs a single-node Kubernetes cluster inside a virtual machine (VM)
     - Automation: Provides a command-line interface (CLI) for managing the cluster
     - Additional Features: Add-ons for enabling various Kubernetes features, such as DNS, storage provisioning, and dashboard
+- **Advantages:**
+  - Easy to set up and use
+  - Good documentation and community support
+  - Supports various Kubernetes add-ons
+- **Disadvantages:**
+  - Limited scalability for larger deployments
+  - Requires a virtual machine for running the Kubernetes cluster
 
 ### Kind (Kubernetes IN Docker)
 - **Description:** Kind is a tool for running local Kubernetes clusters using Docker containers. It provides a lightweight and portable option for local testing and development.
@@ -20,6 +27,13 @@ The purpose of this document is to compare three tools for deploying local Kuber
     - Architecture: Creates multi-node Kubernetes clusters using Docker containers
     - Automation: Can be easily automated and scripted for cluster creation and teardown
     - Additional Features: Integrates with container-based workflows, making it suitable for CI/CD pipelines and local development environments
+- **Advantages:**
+  - Lightweight and portable
+  - Suitable for local development and testing
+  - Integrates well with Docker-based workflows
+- **Disadvantages:**
+  - Limited scalability for large clusters
+  - Limited monitoring and management features compared to production-grade solutions
 
 ### K3d
 - **Description:** K3d is a tool for running lightweight Kubernetes clusters in Docker containers. It leverages Rancher Kubernetes Engine (RKE) to create and manage the clusters.
@@ -28,28 +42,6 @@ The purpose of this document is to compare three tools for deploying local Kuber
     - Architecture: Uses Docker to create and manage Kubernetes clusters
     - Automation: Provides a simple CLI for cluster management and automation
     - Additional Features: Offers additional features like load balancers, container registry integration, and resource limiting options
-
-## Advantages and Disadvantages
-
-### Minikube
-- **Advantages:**
-    - Easy to set up and use
-    - Good documentation and community support
-    - Supports various Kubernetes add-ons
-- **Disadvantages:**
-    - Limited scalability for larger deployments
-    - Requires a virtual machine for running the Kubernetes cluster
-
-### Kind
-- **Advantages:**
-    - Lightweight and portable
-    - Suitable for local development and testing
-    - Integrates well with Docker-based workflows
-- **Disadvantages:**
-    - Limited scalability for large clusters
-    - Limited monitoring and management features compared to production-grade solutions
-
-### K3d
 - **Advantages:**
     - Quick and easy cluster creation
     - Offers additional features for managing clusters
