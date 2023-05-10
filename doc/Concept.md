@@ -1,7 +1,7 @@
 # Concept: Local Kubernetes Cluster Deployment Tools
 
 ## Introduction
-The purpose of this document is to compare three tools for deploying local Kubernetes clusters: `minikube`, `kind` (Kubernetes IN Docker), and `k3d` (Kubernetes in Docker). Each tool offers unique features and characteristics that can impact their suitability for the "AsciiArtify" startup's Proof of Concept (PoC) environment. This document aims to provide an overview of each tool and make a recommendation based on their analysis.
+The purpose of this document is to compare three tools for deploying local Kubernetes clusters: `minikube`, `kind` (Kubernetes IN Docker), and `k3d`. Each tool offers unique features and characteristics that can impact their suitability for the "AsciiArtify" startup's Proof of Concept (PoC) environment. This document aims to provide an overview of each tool and make a recommendation based on their analysis.
 
 ## Tools
 
@@ -97,7 +97,7 @@ This table compares the main characteristics of each tool, including the support
 | K3d      | Windows, macOS, Linux     | Clusters running in Docker containers using Rancher Kubernetes Engine (RKE) | Command-line interface for cluster management  | Additional features such as load balancers, container registry integration, resource limiting | Speed and simplicity of cluster creation, additional features | Limited scalability for large clusters, Docker dependency with licensing considerations |
 
 ## Demonstration
-To demonstrate the **recommended tool**, a short example will be provided showcasing the deployment of a "Hello World" application on Kubernetes using the `Kind`. This demonstration will highlight the simplicity and effectiveness of the chosen tool for local cluster deployment.
+To demonstrate the **recommended tool**, a short example will be provided showcasing the deployment of a `"Hello World"` application on Kubernetes using the `Kind`. This demonstration will highlight the simplicity and effectiveness of the chosen tool for local cluster deployment.
 
 [![asciicast](https://asciinema.org/a/583826.svg)](https://asciinema.org/a/583826)
 
