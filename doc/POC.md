@@ -6,8 +6,17 @@ The goal of this Proof of Concept (PoC) is to demonstrate the feasibility of dep
 ## Steps for Deployment
 
 - ### Setup Kubernetes Cluster
+```yaml
+kind: Cluster
+apiVersion: kind.x-k8s.io/v1alpha4
+nodes:
+  - role: control-plane
+  - role: worker
+  - role: worker
 ```
-kind create cluster --name argocd
+
+```
+kind create cluster --config kind-config.yaml
 k cluster-info
 ```
 
@@ -20,12 +29,12 @@ k apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/m
 
 - ### Configure Access
 ```
-kubectl port-forward svc/argocd-server -n argocd 8080:443&
+k port-forward svc/argocd-server -n argocd 8080:443
 ```
+
 ```
-k -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}"
 k -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d; echo
 ```
 
 ## Demo Example
-[![asciicast](https://asciinema.org/a/584356.svg)](https://asciinema.org/a/584356)
+[![asciicast](https://asciinema.org/a/584380.svg)](https://asciinema.org/a/584380)
