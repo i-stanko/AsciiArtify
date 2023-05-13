@@ -6,18 +6,9 @@ The goal of this Proof of Concept (PoC) is to demonstrate the feasibility of dep
 ## Steps for Deployment
 
 - ### Setup Kubernetes Cluster
-```yaml
-kind: Cluster
-apiVersion: kind.x-k8s.io/v1alpha4
-nodes:
-  - role: control-plane
-  - role: worker
-  - role: worker
 ```
-
-```
-kind create cluster --config kind-config.yaml
-k cluster-info
+kind create cluster --name argo
+kind get clusters
 ```
 
 - ### Install ArgoCD
@@ -25,6 +16,9 @@ k cluster-info
 k create namespace argocd
 k get ns
 k apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
+
+k get all -n argocd
+k get pods -n argocd
 ```
 
 - ### Configure Access
@@ -37,4 +31,4 @@ k -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}
 ```
 
 ## Demo Example
-[![asciicast](https://asciinema.org/a/584380.svg)](https://asciinema.org/a/584380)
+demo

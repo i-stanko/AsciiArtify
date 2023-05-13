@@ -91,7 +91,7 @@ This table compares the main characteristics of each tool, including the support
 ## Demonstration
 To demonstrate the **recommended tool**, a short example will be provided showcasing the deployment of a `"Hello World"` application on Kubernetes using the `Kind`. This demonstration will highlight the simplicity and effectiveness of the chosen tool for local cluster deployment.
 
-[![asciicast](https://asciinema.org/a/583826.svg)](https://asciinema.org/a/583826)
+[![asciicast](https://asciinema.org/a/584598.svg)](https://asciinema.org/a/584598)
 
 ## Conclusion
 After conducting a comparative analysis of the three tools for deploying Kubernetes clusters in a local environment, namely `minikube`, `kind`, and `k3d`, the following conclusions and recommendations can be made for their usage in the Proof of Concept (PoC) of the "AsciiArtify" startup:
@@ -99,7 +99,7 @@ After conducting a comparative analysis of the three tools for deploying Kuberne
 - `Kind` offers a compelling solution for local testing by creating Kubernetes clusters inside Docker containers. It provides a balance between ease of use, flexibility, and community support. Kind's ability to customize cluster configurations and its integration with Docker make it suitable for simulating production environments during the PoC phase. It is the **recommended tool** for deploying the local Kubernetes cluster in the "AsciiArtify" PoC.
 - `K3d` is a tool for quickly creating and testing Kubernetes clusters in Docker containers using Rancher Kubernetes Engine (RKE). It allows for rapid cluster provisioning and testing. While K3d can be considered for PoC preparation, its features and community support may not be as extensive as Kind.
 
-Considering the objectives of the "AsciiArtify" startup, the need for a tool that balances ease of use, flexibility, and community support, `Kind` emerges as the recommended choice for deploying the local Kubernetes cluster during the PoC.
+Considering the objectives of the "AsciiArtify" startup, the need for a tool that balances ease of use, flexibility, and community support, `Kind` emerges as the **recommended choice** for deploying the local Kubernetes cluster during the PoC.
 
 > It is essential to further evaluate the chosen tool based on the specific requirements and constraints of the project. Regular assessment and iteration will help ensure the most suitable tooling for the long-term success of the "AsciiArtify" startup.
 
@@ -109,3 +109,4 @@ Please refer to the following resources for more information on each tool:
 - Kind: [Official Documentation](https://kind.sigs.k8s.io/)
 - K3d: [Official Documentation](https://k3d.io/)
 
+- Podman: [Official Documentation](https://podman.io/docs)
