@@ -31,4 +31,4 @@ k -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}
 ```
 
 ## Demo Example
-demo
+![Argo CD DEMO](assets/Peek01.gif)
