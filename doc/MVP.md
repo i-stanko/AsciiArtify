@@ -28,4 +28,5 @@ Please note that the above list is not exhaustive, and additional features can b
 ## Demo
 
 The repository contains a sample application showcasing the deployment and usage of AsciiArtify on the infrastructure we have set up with ArgoCD.
-![demo](/assets/peek-mvp.gif)
+
+![demo](https://github.com/i-stanko/AsciiArtify/raw/main/assets/peek-mvp.gif)
