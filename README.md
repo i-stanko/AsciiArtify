@@ -1,2 +1,3 @@
 # AsciiArtify
-Concept and PoC for AsciiArtify: ASCII art service with Kubernetes-based local development.
+
+- [Concept.md](https://github.com/i-stanko/AsciiArtify/blob/main/doc/Concept.md)
